@@ -167,6 +167,7 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" <?php if($panelInit->settingsArray['leftmenuScroller'] != "e"){ echo "style='padding-bottom:60px;'"; }?>>
+                    <li><a class='aj scrollTop' href="<?php URL::to('/fleet_add'); ?>" aria-expanded='false'><i class='mdi mdi-account-multiple-outline'></i><span class='hide-menu'>Fleet Management</span></a>  
                         <?php
                         if($users->role == "admin" AND $users->customPermissionsType == "custom"){
                             $userPerm = $users->customPermissionsAsJson();
